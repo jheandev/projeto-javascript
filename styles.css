@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    height: 100vh;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.new-task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 12px 60px;
+
+}
+
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+
+
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+
+}
+
+
+.new-task-input {
+    text-align: left;
+
+}
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.task-item i {
+    background-color: royalblue;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+}
+
+/* Utilites */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+
+}
+
+.completed {
+    text-decoration: line-through;
+}
